@@ -8,4 +8,10 @@ public class Row {
         return data;
     }
 
+    public Row add(List<Double> l){
+        Row row = new Row();
+        row.data.addAll(l);
+        return row;
+    }
+
 }

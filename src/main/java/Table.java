@@ -2,9 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Table {
-    private List<String> headers;
-    public List<Row> getRowAt(int rowNumber){
-        return new ArrayList<>();
+    public static List<String> headers;
+    public static List<Row> rows;
+    public Row getRowAt(int rowNumber){
+        return rows.get(rowNumber);
+
     }
 
 }
